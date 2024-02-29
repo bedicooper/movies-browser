@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
 import { toMovieList, toPeopleList } from "../../../app/routes";
-import { StyledHeader, Logo, Title, StyledList, StyledNavLink } from "./styled";
+import { StyledHeader, Logo, Title, StyledList, StyledNavLink, StyledLink } from "./styled";
 export const Header = () => (
     <StyledHeader>
-        <Link to="/">
-            <Logo />
-        </Link>
-        <Title>Movies Browser</Title>
+        <StyledLink to="/">
+            <StyledList>
+                <Logo />
+                <Title>Movies Browser</Title>
+            </StyledList>
+        </StyledLink>
         <nav>
             <StyledList>
                 <li><StyledNavLink to={toMovieList()}>Movies</StyledNavLink></li>
