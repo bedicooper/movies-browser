@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as WebsiteLogo } from "../../../assets/icon-video.svg"
+
 
 export const StyledHeader = styled.header`
     display: flex;
@@ -16,6 +17,10 @@ export const StyledHeader = styled.header`
         justify-content: center;
         flex-wrap: wrap;
     };
+`
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
 `
 
 export const Logo = styled(WebsiteLogo)`
@@ -49,6 +54,7 @@ export const StyledList = styled.ul`
     margin: 23px 78px 23px 68px;
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 16px;
     color: ${({ theme }) => theme.color.white};
     padding: 0;

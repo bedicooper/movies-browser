@@ -21,6 +21,7 @@ export const Wrapper = styled.label`
 `;
 
 export const Input = styled.input`
+    width:100%;
     font-size: 16px;
     color: ${({ theme }) => theme.color.darkGray};
     border: none;
