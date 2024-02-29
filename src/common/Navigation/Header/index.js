@@ -7,7 +7,6 @@ export const Header = () => (
                 <Logo />
                 <Title>Movies Browser</Title>
             </StyledList>
-
         </StyledLink>
         <nav>
             <StyledList>
